@@ -114,7 +114,7 @@ class acf_field_taxonomy_term extends acf_field {
 		?>
 		<tr class="field_option field_option_<?php echo $this->name; ?>">
 			<td class="label">
-				<label>Type de contenu</label>
+				<label><?php esc_html_e( 'Post types' ); ?></label>
 
 				<p class="description"><?php esc_html_e( 'Post types to use for taxonomies', 'bea-acf-tt' ); ?></p>
 			</td>

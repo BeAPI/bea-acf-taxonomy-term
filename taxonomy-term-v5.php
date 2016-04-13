@@ -107,7 +107,7 @@ class acf_field_taxonomy_term extends acf_field {
         }
 
         acf_render_field_setting( $field, array(
-                'label'        => __( 'Post types' ),
+                'label'        => esc_html__( 'Post types' ),
                 'instructions' => esc_html__( 'Post types to use for taxonomies', 'bea-acf-tt' ),
                 'type'         => 'select',
                 'name'         => 'bea_acf_tt_post_types',
@@ -116,7 +116,7 @@ class acf_field_taxonomy_term extends acf_field {
         ) );
 
         acf_render_field_setting( $field, array(
-                'label'        => __( 'Multiple select' ),
+                'label'        => esc_html__( 'Multiple select' ),
                 'instructions' => esc_html__( 'Allows selection of multiple of terms', 'bea-acf-tt' ),
                 'type'         => 'radio',
                 'name'         => 'bea_acf_tt_allow_multiple',
