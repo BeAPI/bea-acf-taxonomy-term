@@ -27,7 +27,7 @@ class acf_field_taxonomy_term extends acf_field {
         $this->name     = 'taxonomy_term';
         $this->label    = __( 'Term Taxonomy Selector', 'bea-acf-tt' );
         $this->category = __( "Basic", 'acf' ); // Basic, Content, Choice, etc
-        $this->defaults = array( 'post_type' => 'all_taxonomies', 'allow_multiple' => 1 );
+        $this->defaults = array( 'bea_acf_tt_post_types' => '', 'bea_acf_tt_allow_multiple' => 1 );
 
 
         // do not delete!
@@ -122,8 +122,8 @@ class acf_field_taxonomy_term extends acf_field {
                 'name'         => 'bea_acf_tt_allow_multiple',
                 'layout'       => 'horizontal',
                 'choices'      => array(
-                        'yes' => __( 'Yes', 'acf' ),
-                        'no'  => __( 'No', 'acf' )
+                        1 => __( 'Yes', 'acf' ),
+                        0 => __( 'No', 'acf' )
                 )
         ) );
 
@@ -176,7 +176,6 @@ class acf_field_taxonomy_term extends acf_field {
         $taxonomies_selected = (array) $values['taxonomies'];
         $terms_selected      = (array) $values['terms'];
         $terms               = get_terms( apply_filters( 'bea-acf-taxonomy-terms/taxonomy_selected', $taxonomies_selected ), array( 'hide_empty' => false ) );
-
         ?>
         <span class="acf-label"><?php esc_html_e( 'Taxonomies', 'bea-acf-tt' ); ?></span>
         <select placeholder="<?php esc_attr_e( 'Choose 1 or more taxonomies', 'bea-acf-tt' ); ?>"
