@@ -21,4 +21,4 @@ Set new custom field :
 
 Then go to you post edit :
 
-![Save fields](/assets/img/screen1.png?raw=true)
+![Save fields](/assets/img/screen1.PNG?raw=true)
