@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sf-abt 2.1\n"
+"Report-Msgid-Bugs-To: http://beapi.fr/\n"
+"POT-Creation-Date: 2012-06-09 15:33+0100\n"
+"PO-Revision-Date: 2013-01-26 22:04+0100\n"
+"Last-Translator: technique Be API <technique@beapi.fr>\n"
+"Language-Team: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"Language: fr_FR\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: taxonomy-term-v4.php
+#: taxonomy-term-v5.php
+# --------------------------------------------------------
+msgid  "Term Taxonomy Selector"
+msgstr ""
+
+#: taxonomy-term-v4.php
+#: taxonomy-term-v5.php
+# --------------------------------------------------------
+msgid  "All custom post types"
+msgstr ""
+
+#: taxonomy-term-v4.php
+#: taxonomy-term-v5.php
+# --------------------------------------------------------
+msgid  "Post types to use for taxonomies"
+msgstr ""
+
+#: taxonomy-term-v4.php
+#: taxonomy-term-v5.php
+# --------------------------------------------------------
+msgid  "Multiple select"
+msgstr ""
+
+#: taxonomy-term-v4.php
+#: taxonomy-term-v5.php
+# --------------------------------------------------------
+msgid  "Allows selection of multiple of terms"
+msgstr ""
+
+#: taxonomy-term-v4.php
+#: taxonomy-term-v5.php
+# --------------------------------------------------------
+msgid  "Taxonomies"
+msgstr ""
+
+#: taxonomy-term-v4.php
+#: taxonomy-term-v5.php
+# --------------------------------------------------------
+msgid  "Choose 1 or more taxonomies"
+msgstr ""
+
+#: taxonomy-term-v4.php
+#: taxonomy-term-v5.php
+# --------------------------------------------------------
+msgid  "None"
+msgstr ""
+
+#: taxonomy-term-v4.php
+#: taxonomy-term-v5.php
+# --------------------------------------------------------
+msgid  "Terms"
+msgstr ""
+
+#: taxonomy-term-v4.php
+#: taxonomy-term-v5.php
+# --------------------------------------------------------
+msgid  "Choose 1 or more terms that belong to these taxonomies"
+msgstr ""
+

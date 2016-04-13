@@ -9,8 +9,11 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
-class bea_acf_field_taxonom_term_plugin {
+class bea_acf_field_taxonomy_term_plugin {
 	/**
 	*  Construct
 	*
@@ -62,5 +65,5 @@ function bea_acf_field_taxonomy_init(){
 
 add_action( 'plugins_loaded', 'bea_acf_field_taxonomy_term_load' );
 function bea_acf_field_taxonomy_term_load() {
-	new bea_acf_field_taxonom_term_plugin();
+	new bea_acf_field_taxonomy_term_plugin();
 }
