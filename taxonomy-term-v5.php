@@ -198,10 +198,12 @@ class acf_field_taxonomy_term extends acf_field {
                 name="<?php echo esc_attr( $field['name'] ); ?>[terms][]">
             <option value=""><?php esc_html_e( 'None', 'bea-acf-tt' )?></option>
 
-            <?php foreach ( $terms as $term ): ?>
-                <option <?php selected( in_array( $term->term_id, $terms_selected ), true ); ?>
-                        value="<?php echo esc_attr( $term->term_id ); ?>"><?php echo esc_html( $term->name ); ?></option>
-            <?php endforeach; ?>
+            <?php if ( ! is_wp_error( $terms ) ) : ?>
+                <?php foreach ( $terms as $term ): ?>
+                    <option <?php selected( in_array( $term->term_id, $terms_selected ), true ); ?>
+                            value="<?php echo esc_attr( $term->term_id ); ?>"><?php echo esc_html( $term->name ); ?></option>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </select>
 
         <script>bea_acf_term_taxonomy_refresh();</script>
