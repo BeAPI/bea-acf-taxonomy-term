@@ -1,6 +1,6 @@
 {
   "name": "bea-acf-taxonomy-term",
-  "version": "1.0.1,
+  "version": "1.0.1",
   "description": "Bea ACF Taxonomy Term",
   "author": "Be API",
   "devDependencies": {
