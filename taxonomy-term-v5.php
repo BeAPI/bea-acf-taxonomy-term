@@ -175,7 +175,7 @@ class acf_field_taxonomy_term extends acf_field {
         $values              = wp_parse_args( $field['value'], array( 'taxonomies' => array(), 'terms' => array() ) );
         $taxonomies_selected = (array) $values['taxonomies'];
         $terms_selected      = (array) $values['terms'];
-        $terms               = get_terms( apply_filters( 'bea-acf-taxonomy-terms/taxonomy_selected', $taxonomies_selected ), array( 'hide_empty' => false ) );
+        $terms               = get_terms( apply_filters( 'bea-acf-tt/taxonomy_selected', $taxonomies_selected ), array( 'hide_empty' => false ) );
         ?>
         <span class="acf-label"><?php esc_html_e( 'Taxonomies', 'bea-acf-tt' ); ?></span>
         <select placeholder="<?php esc_attr_e( 'Choose 1 or more taxonomies', 'bea-acf-tt' ); ?>"
