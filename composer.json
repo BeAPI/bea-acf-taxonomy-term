@@ -1,0 +1,16 @@
+{
+  "name": "beapi/bea-acf-taxonomy-term",
+  "description": "Add a select2 field taxonomy + select2 field terms",
+  "minimum-stability": "stable",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "BeAPI",
+      "email": "technique@beapi.fr"
+    }
+  ],
+  "type" : "wordpress-plugin",
+  "require" : {
+    "composer/installers" : "~1.0"
+  }
+}
