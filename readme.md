@@ -5,3 +5,8 @@ Use library select2 to allow selection of multiple taxonomies and terms as ACF f
 Compatible with :
  - ACF v4
  - ACF PRO : https://www.advancedcustomfields.com/pro/
+ - 
+ Features :
+
+- multiple selection, autocomplete
+- single selection
