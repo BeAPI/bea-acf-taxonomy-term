@@ -10,14 +10,6 @@
         bea_acf_taxonomy_terms_tpl = jQuery( '#tmpl-bea-taxonomy-term').html();
     });
 
-
-    function initialize_field( $el ) {
-
-        //$el.doStuff();
-
-    }
-
-
     if( typeof acf.add_action !== 'undefined' ) {
 
         /*
@@ -39,7 +31,6 @@
             // search $el for fields of type 'FIELD_NAME'
             acf.get_fields({ type : 'taxonomy_term'}, $el).each(function(){
 
-                initialize_field( $(this) );
                 $el.find('select.bea_acf_taxonomy_term_taxonomies, select.bea_acf_taxonomy_term_taxonomies_terms')
                     .select2()
                     .on('change', function (e) {
@@ -96,7 +87,6 @@
 
             $(postbox).find('.field[data-field_type="taxonomy_term"]').each(function(){
 
-                initialize_field( $(this) );
                 jQuery('select.bea_acf_taxonomy_term_taxonomies, select.bea_acf_taxonomy_term_taxonomies_terms')
                     .select2()
                     .on('change', function (e) {
