@@ -24,11 +24,11 @@ Then go to you post edit :
 
 ![Save fields](/assets/img/screen1.PNG?raw=true)
 
-# Changelog
+## Changelog
 
-* 1.0.2
+### 1.0.2
 * use js ACF actions to fix bug with repeaters and flexible
 
-* 1.0.1
+### 1.0.1
 * initial
 
