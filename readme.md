@@ -1,6 +1,7 @@
 # BEA ACF Taxonomy Term 1.0.1
 
 Use library select2 to allow selection of multiple taxonomies and terms as ACF field
+The default term selector allows you to do that on admin field, this plugin allows you to set tax and terms per post
 
 ## Compatibility
 
