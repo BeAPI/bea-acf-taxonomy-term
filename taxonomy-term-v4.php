@@ -232,8 +232,6 @@ class bea_acf_field_taxonomy_term extends acf_field {
 					value="<?php echo esc_attr( $term->term_id ); ?>"><?php echo esc_html( $term->name ); ?></option>
 			<?php endforeach; ?>
 		</select>
-
-		<script>bea_acf_term_taxonomy_refresh();</script>
 	<?php
 	}
 

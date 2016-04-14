@@ -207,8 +207,6 @@ class bea_acf_field_taxonomy_term extends acf_field {
                 <?php endforeach; ?>
             <?php endif; ?>
         </select>
-
-        <script>bea_acf_term_taxonomy_refresh();</script>
         <?php
     }
 
