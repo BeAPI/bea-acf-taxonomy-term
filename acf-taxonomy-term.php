@@ -2,7 +2,7 @@
 /**
 Plugin Name: Advanced Custom Fields: Taxonomy term
 Description: Add taxonomies terms selector
-Version: 1.0.1
+Version: 1.0.2
 Author: BeApi
 Author URI: www.beapi.fr
 License: GPLv2 or later

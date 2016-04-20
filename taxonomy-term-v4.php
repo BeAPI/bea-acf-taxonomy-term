@@ -206,7 +206,9 @@ class bea_acf_field_taxonomy_term extends acf_field {
 		$terms               = get_terms( $taxonomies_selected, array( 'hide_empty' => false ) );
 		?>
 		<span class="acf-label"><?php esc_html_e( 'Taxonomies', 'bea-acf-tt' ); ?></span>
-        <label for="bea_acf_tt_tax"><?php esc_html_e( 'Choose 1 or more taxonomies', 'bea-acf-tt' ); ?></label>
+		<?php if ( $field['bea_acf_tt_allow_multiple'] == true ) : ?>
+			<label for="bea_acf_tt_tax"><?php esc_html_e( 'Choose 1 or more taxonomies', 'bea-acf-tt' ); ?></label>
+		<?php endif; ?>
         <select id="bea_acf_tt_tax"
 				class="bea_acf_taxonomy_term_taxonomies widefat" <?php __checked_selected_helper( true, $field['allow_multiple'], true, 'multiple' ); ?>
 				name="<?php echo esc_attr( $field['name'] ); ?>[taxonomies][]">
@@ -222,7 +224,9 @@ class bea_acf_field_taxonomy_term extends acf_field {
 		</select>
 
 		<span class="acf-label"><?php esc_html_e( 'Terms', 'bea-acf-tt' ); ?></span>
-        <label for="bea_acf_tt_allow_multiple"><?php esc_html_e( 'Choose 1 or more terms that belong to these taxonomies', 'bea-acf-tt' ); ?></label>
+		<?php if ( $field['bea_acf_tt_allow_multiple'] == true ) : ?>
+			<label for="bea_acf_tt_allow_multiple"><?php esc_html_e( 'Choose 1 or more terms that belong to these taxonomies', 'bea-acf-tt' ); ?></label>
+		<?php endif; ?>
         <select id="bea_acf_tt_allow_multiple"
 				class="bea_acf_taxonomy_term_taxonomies_terms widefat" <?php __checked_selected_helper( true, $field['allow_multiple'], true, 'multiple' ); ?>
 				name="<?php echo esc_attr( $field['name'] ); ?>[terms][]">
