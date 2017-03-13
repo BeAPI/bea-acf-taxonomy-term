@@ -125,3 +125,11 @@
 
 
 })(jQuery);
+
+function be_acf_taxonomy_term_selected(value, check) {"use strict";
+    return be_acf_taxonomy_term_checked_selected_helper(value, check, 'selected');
+};
+
+function be_acf_taxonomy_term_checked_selected_helper (helper, current, type) {"use strict";
+    return ( helper === current ) ? type + '="' + type + '"' : '';
+};
