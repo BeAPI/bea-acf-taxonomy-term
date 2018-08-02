@@ -1,12 +1,12 @@
 <?php
 /**
-Plugin Name: Advanced Custom Fields: Taxonomy term
-Description: Add taxonomies terms selector
-Version: 1.0.1
-Author: BeApi
-Author URI: www.beapi.fr
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Plugin Name: Advanced Custom Fields: Taxonomy term
+* Description: Add taxonomies terms selector
+* Version: 1.0.3
+* Author: BeApi
+* Author URI: www.beapi.fr
+* License: GPLv2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
