@@ -211,14 +211,14 @@ class bea_acf_field_taxonomy_term extends acf_field {
     }
 
     /**
-     * @param stdClass $taxonomy : a Taxonomy base object
+     * @param $taxonomy : a Taxonomy base object
      * @param string   $before
      * @param string   $after
      *
      * @return bool|string
      * @author Nicolas Juen
      */
-    private static function extract_post_types( stdClass $taxonomy, $before = ' (', $after = ')' ) {
+    private static function extract_post_types( $taxonomy, $before = ' (', $after = ')' ) {
         if ( empty( $taxonomy->object_type ) ) {
             return false;
         }
