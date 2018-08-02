@@ -26,6 +26,9 @@ Then go to you post edit :
 
 ## Changelog
 
+### 1.0.3
+* delete cast stdclass
+
 ### 1.0.2
 * use js ACF actions to fix bug with repeaters and flexible
 
