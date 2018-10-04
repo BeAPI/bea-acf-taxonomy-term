@@ -61,6 +61,7 @@ class bea_acf_field_taxonomy_term extends acf_field {
 
         // Enqueuing
         wp_enqueue_script( 'acf-input-taxonomy-term' );
+	    wp_enqueue_script( 'select2' );
         wp_enqueue_style( 'select2' );
     }
 
