@@ -126,3 +126,10 @@ function be_acf_taxonomy_term_checked_selected_helper(helper, current, type) {
     "use strict";
     return ( helper === current ) ? type + '="' + type + '"' : '';
 };
+
+// init sortable
+jQuery(document).ready(function () {
+    jQuery("ul.select2-selection__rendered").sortable({
+        containment: 'parent'
+    })
+});
