@@ -11,7 +11,7 @@ Compatible with :
 
 ## Features
 
-- multiple selection, autocomplete
+- multiple selection, autocomplete, reorder, select2
 - single selection
 
 ## Screenshots
@@ -25,6 +25,10 @@ Then go to you post edit :
 ![Save fields](/assets/img/screen1.PNG?raw=true)
 
 ## Changelog
+
+### 1.0.4 - 15 Nov 2018
+* FEATURE [#2](https://github.com/BeAPI/bea-acf-taxonomy-term/pull/2) :  hide some labels in certain conditions
+* FEATURE [#3](https://github.com/BeAPI/bea-acf-taxonomy-term/issues/3) :  select2 with reorder feature
 
 ### 1.0.3
 * delete cast stdclass
