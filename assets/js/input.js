@@ -1,8 +1,3 @@
-/**
- * @link https://github.com/elliotcondon/acf-field-type-template/blob/master/assets/js/input.js
- * TODO: DRY
- */
-
 (function ($) {
 
     var bea_acf_taxonomy_terms_tpl, bea_acf_taxonomy_terms_ajax;
