@@ -64,6 +64,7 @@ class bea_acf_field_taxonomy_term extends acf_field {
 
 		// Enqueuing
 		wp_enqueue_script( 'acf-input-taxonomy-term' );
+		wp_enqueue_script( 'select2' );
 		wp_enqueue_style( 'select2' );
 	}
 
@@ -223,7 +224,7 @@ class bea_acf_field_taxonomy_term extends acf_field {
 
 		<span class="acf-label"><?php esc_html_e( 'Terms', 'bea-acf-tt' ); ?></span>
         <label for="bea_acf_tt_allow_multiple"><?php esc_html_e( 'Choose 1 or more terms that belong to these taxonomies', 'bea-acf-tt' ); ?></label>
-        <select id="bea_acf_tt_allow_multiple"
+        <select id="bea_acf_tt_allow_multiple multiple multiple=True"
 				class="bea_acf_taxonomy_term_taxonomies_terms widefat" <?php __checked_selected_helper( true, $field['allow_multiple'], true, 'multiple' ); ?>
 				name="<?php echo esc_attr( $field['name'] ); ?>[terms][]">
 			<option value=""> <?php esc_html_e( 'None', 'bea-acf-tt' )?></option>
