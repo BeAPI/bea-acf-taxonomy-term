@@ -199,10 +199,12 @@ class bea_acf_field_taxonomy_term extends acf_field {
 		$terms_selected      = (array) $values['terms'];
 		$terms               = get_terms( $taxonomies_selected, array( 'hide_empty' => false ) ); ?>
 
-		<span class="acf-label"><?php esc_html_e( 'Taxonomies', 'bea-acf-tt' ); ?></span>
+		<?php if ( ! empty( $field['bea_acf_tt_allow_multiple'] ) ) : ?>
+			<span class="acf-label"><?php esc_html_e( 'Taxonomies', 'bea-acf-tt' ); ?></span>
+		<?php endif; ?>
 		<label for="bea_acf_tt_tax"><?php esc_html_e( 'Choose 1 or more taxonomies', 'bea-acf-tt' ); ?></label>
 		<select id="bea_acf_tt_tax" class="bea_acf_taxonomy_term_taxonomies widefat" <?php __checked_selected_helper( true, $field['allow_multiple'], true, 'multiple' ); ?> name="<?php echo esc_attr( $field['name'] ); ?>[taxonomies][]">
-			<option value=""> <?php esc_html_e( 'None', 'bea-acf-tt' ) ?></option>
+			<option value=""><?php esc_html_e( 'None', 'bea-acf-tt' ) ?></option>
 			<?php foreach ( $taxonomies as $taxonomy ) :
 				if ( empty( $taxonomy->object_type ) ) {
 					continue;
@@ -214,9 +216,11 @@ class bea_acf_field_taxonomy_term extends acf_field {
 		</select>
 
 		<span class="acf-label"><?php esc_html_e( 'Terms', 'bea-acf-tt' ); ?></span>
-		<label for="bea_acf_tt_allow_multiple"><?php esc_html_e( 'Choose 1 or more terms that belong to these taxonomies', 'bea-acf-tt' ); ?></label>
+		<?php if ( ! empty( $field['bea_acf_tt_allow_multiple'] ) ) : ?>
+			<label for="bea_acf_tt_allow_multiple"><?php esc_html_e( 'Choose 1 or more terms that belong to these taxonomies', 'bea-acf-tt' ); ?></label>
+		<?php endif; ?>
 		<select id="bea_acf_tt_allow_multiple multiple multiple=True" class="bea_acf_taxonomy_term_taxonomies_terms widefat" <?php __checked_selected_helper( true, $field['allow_multiple'], true, 'multiple' ); ?> name="<?php echo esc_attr( $field['name'] ); ?>[terms][]">
-			<option value=""> <?php esc_html_e( 'None', 'bea-acf-tt' ) ?></option>
+			<option value=""><?php esc_html_e( 'None', 'bea-acf-tt' ) ?></option>
 			<?php foreach ( $terms as $term ): ?>
 				<option <?php selected( in_array( $term->term_id, $terms_selected ), true ); ?> value="<?php echo esc_attr( $term->term_id ); ?>">
 					<?php echo esc_html( $term->name ); ?>
