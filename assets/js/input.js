@@ -129,7 +129,14 @@ function be_acf_taxonomy_term_checked_selected_helper(helper, current, type) {
 
 // init sortable
 jQuery(document).ready(function () {
+    jQuery('.bea_acf_taxonomy_term_taxonomies').select2();
     jQuery("ul.select2-selection__rendered").sortable({
-        containment: 'parent'
-    })
+        containment: 'parent',
+        // start: function () {
+        //     jQuery(".bea_acf_taxonomy_term_taxonomies").select2("onSortStart");
+        // },
+        // update: function () {
+        //     jQuery(".bea_acf_taxonomy_term_taxonomies").select2("onSortEnd");
+        // }
+    });
 });
